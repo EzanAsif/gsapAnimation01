@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.parent{
+    width: 350px;
+    height: 600px;
+    background: url(./alex-iby-XhMSz5I1kn8-unsplash.jpg) center no-repeat;
+    background-size: cover;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.parent .overlay{
+    background-color: #111;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: relative;
+    top: 0%;
+}
+
+.parent .content{
+    position: relative;
+    bottom: 95%;
+    left: 5%;
+    opacity: 1;
+    z-index: 1000;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+}
+
+.parent .content .heading{
+    font-size: 35px;    
+    font-weight: 700;
+    color: white;
+    width: 100%;    
+    z-index: 1000;
+    opacity: 0;
+    line-height: 1.2;
+    font-family: 'Montserrat';
+    /* margin-top: 40px; */
+
+}
+
+.parent .content .para{
+    font-size: 16px;
+    font-weight :400;
+    color: white;
+    width: 100%;
+    z-index: 1000;
+    line-height: 1.75;
+    top: 0;
+    opacity: 0;
+    /* margin-top: 20px; */
+    font-family: 'Montserrat';
+
+}
+
+.parent .content .logo{
+    font-size: 30px;
+    color: #ff0a54;
+    opacity: 0;
+    width: max-content;
+    margin-bottom: 20px;
+}
+
+.parent .content .themeForest{
+    padding: 10px 15px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: white;
+    background-color: #111;
+    width: max-content;
+    font-size: 15px;
+    text-align: center;
+}

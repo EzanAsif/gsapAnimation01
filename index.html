@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="overlay"></div>
+      <div class="content">
+        <i class="fa fa-bolt logo" aria-hidden="true"></i>
+        <div class="heading">Best Practices for Website Designer</div>
+        <div class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          omnis deserunt laudantium consequuntur molestias labore nihil aliquam
+          ducimus ex asperiores.
+        </div>
+        <div class="themeForest">www.themeforest.com</div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+    <script>
+      TweenMax.from(".parent .overlay", 1, {
+        delay: 0.5,
+        y: "100%",
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".parent .content .logo", 0.75, {
+        delay: 1,
+        y: "0%",
+        opacity: 0,
+        ease: Expo.easeInOut,
+
+      });
+      TweenMax.to(".parent .content .logo", 0.75, {
+        delay: 1,
+        y: "100%",
+        opacity: 1,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".parent .content .heading", 0.75, {
+        delay: 1.5,
+        y: "100%",
+        opacity: 0,
+      });
+      TweenMax.to(".parent .content .heading", 0.75, {
+        delay: 1.5,
+        y: "0%",
+        opacity: 1,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".parent .content .para", 0.75, {
+        delay: 1.85,
+        y: "100%",
+        opacity: 0,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.to(".parent .content .para", 0.75, {
+        delay: 1.85,
+        y: "0%",
+        opacity: 1,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".parent .content .themeForest", 0.75, {
+        delay: 2.2,
+        y: "100%",
+        opacity: 0,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.to(".parent .content .themeForest", 0.75, {
+        delay: 2.2,
+        y: "0%",
+        opacity: 1,
+        ease: Expo.easeInOut,
+      });
+    </script>
+  </body>
+</html>
